@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!--
+Il presente progetto è realizzato esclusivamente a scopo didattico.
+L’azienda, i report, i fatti e le persone menzionate sono frutto di pura invenzione
+e non hanno alcun riferimento alla realtà. 
+-->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliva Felice</title>
+    <!-- metto anche un mio foglio CSS così da poterci mettere qualche mio style di contorno -->
+    <link rel="stylesheet" href="style.css">
+    <!--Importo la parte CSS del framework Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- importo mediante cdn il file css di bootstrap per le icone-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--- Importo la navbar dalla documentazione Bootstrap-->
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid" href="#">
+    <a class="navbar-brand" href="#">
+      <img src="img/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      Oliva Felice srl
+    </a>
+  </div>
+</nav>
+
+<!--- importo dalla sezione Examples di Bootstrap un hero così da presentare il sito -->
+<div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" src="img/Logo.png" alt="logoHero" width="72" height="57"> 
+  <h1 class="display-5 fw-bold text-body-emphasis">Oliva Felice</h1> <div class="col-lg-6 mx-auto"> 
+  <p class="lead mb-4">Dalla cura degli ulivi alla trasformazione del frutto, accompagniamo ogni oliva nel suo viaggio verso oli e prodotti autentici.
+Tradizione, innovazione ed energie rinnovabili si incontrano per un’ulivicoltura che rispetta la terra e guarda al futuro.</p> 
+  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
+    <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="#report">Report</a> 
+    <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#prodotti">Prodotti</a> 
+  </div> 
+</div> 
+</div>
+
+
+<!-- Metto il nome dell'azienda all'interno di un contenitore (div) per adattarsi in maniera responsive -->
+<div class="container-fluid text-center">
+    <h1>Oliva Felice srl</h1>
+<p>Azienda agricola specializzata nella coltivazione e trasformazione delle olive,
+orientata a pratiche produttive rispettose dell’ambiente e del territorio.</p>
+</div>
+
+<!-- importo il carosello da Bootstrap per rendere le immagini più fluide -->
+<div class="container-fluid px-0">
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/sfondoOlivaFelice.png" class="d-block w-100" alt="OlivaFelice">
+        </div>
+        <div class="carousel-item">
+          <img src="img/OlivaItaliana.png" class="d-block w-100" alt="OlivaItaliana">
+        </div>
+        <div class="carousel-item">
+          <img src="img/CampiUlivi.png" class="d-block w-100" alt="Campi">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+<!-- creo un div per la sezione chi siamo  -->
+<div class="container chisiamo">
+  <section>
+    <h2>Chi siamo:</h2>
+    <p>Siamo un’azienda che cresce nel rispetto delle politiche green, profondamente legata al territorio e in armonia con le normative UE, da cui traiamo la nostra forza.</p>
+    <div class="d-flex justify-content-between mt-3 px-3">
+  <img src="img/UEoliva.png" class="img-fluid rounded" style="width:70px;" alt="OlivaUE">
+  <img src="img/bottigliaOlio.png" class="img-fluid rounded" style="width:70px;" alt="olio">
+  <img src="img/CestoOlive.png" class="img-fluid rounded" style="width:70px;" alt="Cesto di olive">
+</div>
+  </section>
+</div>
+
+<hr>
+
+<!-- creo la sezione per lo scaricamento dei report aziendali, report che metterò dentro una tabella  -->
+<div class="container sostenibile">
+  <section>
+    <h2 class="titoloSost" id="report">Sostenibilità come parola d'ordine!</h2>
+    <p>Dalla nostra nascita mettiamo la sostenibilità al centro di ogni scelta, adottando pratiche responsabili che tutelano l’ambiente, il territorio e le persone.
+Operiamo secondo una politica di totale trasparenza, soprattutto nei confronti dei nostri partner e dei nostri clienti, perché crediamo che la fiducia sia un valore fondamentale.
+Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puoi consultare i nostri Report di sostenibilità.</p>
+  <table class="table table-bordered border-success text-center align-middle">
+  <thead class="table-light">
+    <tr>
+      <th scope="col">Anno</th>
+      <th scope="col">2023</th>
+      <th scope="col">2024</th>
+      <th scope="col">2025</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">Report</th>
+      <td>
+        <a href="documents/ReportOlivaFelice2023.pdf">Scarica</a>
+      </td>
+      <td>
+        <a href="documents/ReportOlivaFelice2024.pdf">Scarica</a>
+      </td>
+      <td>
+        <a href="documents/ReportOlivaFelice2025.pdf">Scarica</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+  </section>
+</div>
+
+
+<!-- Creo una sezione con 4 card che descrivano in breve i prodotti e i servizi che l'azienda offre -->
+<h2 style="text-align: center; color: red; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" id="prodotti"> I nostri prodotti:</h2>
+<div class="row row-cols-1 row-cols-md-2 g-4" style="margin: 15px;">
+  <div class="col">
+    <div class="card">
+      <img src="img/bottigliaOlio2.png" class="card-img-top imgCard" alt="Bottiglia di olio">
+      <div class="card-body">
+        <h5 class="card-title">Olio</h5>
+        <p class="card-text">Da anni ci occupiamo con amore e passione dell'olio extravergine di oliva.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/CestoOlive.png" class="card-img-top imgCard" alt="olive">
+      <div class="card-body">
+        <h5 class="card-title">Olive</h5>
+        <p class="card-text">Le nostre olive sono il nostro punto di forza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/pate.png" class="card-img-top imgCard" alt="patè di olive">
+      <div class="card-body">
+        <h5 class="card-title">Prodotti</h5>
+        <p class="card-text">Cerca al supermercato i prodotti con il nostro marchio.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/olive.png" class="card-img-top imgCard" alt="olive">
+      <div class="card-body">
+        <h5 class="card-title">Servizio di frantoio</h5>
+        <p class="card-text">Offriamo servizi di frantoio presso la nostra sede.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--- Creo il footer della pagina con i vari indirizzi -->
+<footer class="py-4">
+  <div class="contatti">
+    <h4>Contatti:</h4>
+    <address>
+      Indirizzo: Via Roma 234, 000001 Cagliari (CA)<br>
+      Email: olivafelicesrl@olivafelice.it<br>
+      Telefono: +3907123456789<br>
+      PEC: olivafelice@pec.it<br>
+      P.IVA: 0123456789
+    </address>
+  </div>
+  <!--- Creo un piccolo div dove dentro ci metto 3 icone prese da Bootstrap-->
+  <div class="icone">
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-instagram"></i>
+  </div>
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Il presente progetto è realizzato esclusivamente a scopo didattico.
+L’azienda, i report, i fatti e le persone menzionate sono frutto di pura invenzione
+e non hanno alcun riferimento alla realtà. */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.chisiamo {
+    background-color: green;  /* imposto il verde come colore di sfondo del div */
+    color: white;              /* imposto il colore bianco per le varie scritte nei paragrafi */
+    border-radius: 10px;            /* arrotondo un po' i bordi  */
+    margin: 10px;                    /* imposto lo spazio esterno al div così da tenerlo lontando da altri elementi */
+    padding: 10px;                          /* imposto lo spazio interno attorno al div */
+}
+
+.sostenibile {
+    border: 1px solid black;  /* imposto un bordo che delinea tutto il mio div, di 1px solido e di color nero */
+    border-radius: 10px;        /* arrotondo il bordo creato */
+    margin: 20px;              /* imposto lo spazio del div da altri elementii */
+    padding: 10px;              /* imposto lo spazio interno attorno al div */
+}
+
+.titoloSost {
+    text-align: center;   /* posiziono il testo al centro */
+    color: blue;      /* imposto il colore blu per il testo */
+}
+
+.imgCard {
+    max-height: 400px; /* imposto la massima altezza che l'immagine può avere */
+    width: 100%;     /* così permetto all'immagine di occupare tutta la grandezza del contenitore padre */
+}
+
+footer {
+    background-color: green;   /* imposto come colore del footer il verde */
+    color: white;            /* metto il bianco come colore per le scritte */
+}
+
+.contatti {
+    text-align: center;        /* posiziono i contatti in mezzo nel footer  */
+}
+
+.icone {
+    text-align: left;             /* position a sinistra le icone  */
+    margin: 10px;         /* imposto un margine esterno di 10px */
+}
+
+.icone i {                      /* prendo la classe icone e specifico di voler modificare il tag i dentro la classe */
+    font-size: 1.5rem;              /* imposto la grandezza della icona  */
+    margin-right: 10px;                /* imposto un margine esterno destro di 10px */
+}
