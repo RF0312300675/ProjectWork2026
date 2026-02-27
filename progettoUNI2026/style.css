@@ -1,11 +1,15 @@
 /* Il presente progetto è realizzato esclusivamente a scopo didattico.
-L’azienda, i report, i fatti e le persone menzionate sono frutto di pura invenzione
-e non hanno alcun riferimento alla realtà. */
+L’azienda e le persone menzionate sono frutto di pura invenzione.
+Il progetto ha tratto ispirazione, per struttura e impostazione,
+dall’azienda Olio Carli S.p.A.*/
 html, body {
-    margin: 0;
-    padding: 0;
+    margin: 0; 
+    padding: 0;   /* elimino lo spazio interno ed esterno dell'elemento html e body */
 }
 
+.titolo {
+    font-size: 3rem; /* imposto una grandezza al secondo titolo della pagina in rem */
+}
 
 .chisiamo {
     background-color: green;  /* imposto il verde come colore di sfondo del div */
@@ -13,6 +17,25 @@ html, body {
     border-radius: 10px;            /* arrotondo un po' i bordi  */
     margin: 10px;                    /* imposto lo spazio esterno al div così da tenerlo lontando da altri elementi */
     padding: 10px;                          /* imposto lo spazio interno attorno al div */
+}
+
+.ImmaginiCarosel {
+    border-radius: 10px; /* arrotondo gli angoli di 10px */
+    object-fit: cover;   /* ridimensioni l'immagine per riempire il contenitore */
+}
+
+.corpoCert {
+    background-color: green; /* imposto il verde nel corpo del div delle certificazioni */
+}
+
+.scritta {
+    font-family: fantasy; /* imposto un font family diverso per i titoli */
+}
+
+.cert img {
+    height: 150px; /* modifico l'altezza delle immagini */
+    object-fit: contain; /* ridimensione l'immagine */
+    background-color: green; /* imposto il verde come colore di sfondo delle immagini delle certificazioni */
 }
 
 .sostenibile {
@@ -49,4 +72,5 @@ footer {
 .icone i {                      /* prendo la classe icone e specifico di voler modificare il tag i dentro la classe */
     font-size: 1.5rem;              /* imposto la grandezza della icona  */
     margin-right: 10px;                /* imposto un margine esterno destro di 10px */
+    color: white;                /* imposto il colore delle icone */
 }

@@ -3,7 +3,7 @@
 Progetto realizzato **esclusivamente a scopo didattico**.
 
 **DISCLAIMER**
-L’azienda, i report, i dati, i fatti e le persone citate sono frutto di pura invenzione e non hanno alcun riferimento alla realtà.
+l'azienda e le persone citate sono frutto di pura invenzione e non hanno alcun riferimento alla realtà, i fatti e i dati riportati sono stati ispirati all'azienda Olio Carli S.p.A, riadattati alla realtà fittizia ideata a scopo didattico.
 
 ## TECNOLOGIE:
 - HTML5

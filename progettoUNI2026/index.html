@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--
 Il presente progetto è realizzato esclusivamente a scopo didattico.
-L’azienda, i report, i fatti e le persone menzionate sono frutto di pura invenzione
-e non hanno alcun riferimento alla realtà. 
+L’azienda e le persone menzionate sono frutto di pura invenzione.
+Il progetto ha tratto ispirazione, per struttura e impostazione,
+dall’azienda Olio Carli S.p.A.
 -->
 <html lang="it">
 <head>
@@ -19,7 +20,7 @@ e non hanno alcun riferimento alla realtà.
 <body>
     <!--- Importo la navbar dalla documentazione Bootstrap-->
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid" href="#">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="img/Logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
       Oliva Felice srl
@@ -33,8 +34,8 @@ e non hanno alcun riferimento alla realtà.
   <p class="lead mb-4">Dalla cura degli ulivi alla trasformazione del frutto, accompagniamo ogni oliva nel suo viaggio verso oli e prodotti autentici.
 Tradizione, innovazione ed energie rinnovabili si incontrano per un’ulivicoltura che rispetta la terra e guarda al futuro.</p> 
   <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> 
-    <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="#report">Report</a> 
-    <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#prodotti">Prodotti</a> 
+    <a class="btn btn-primary btn-lg px-4 gap-3" href="#report">Report</a> 
+    <a class="btn btn-outline-secondary btn-lg px-4" href="#prodotti">Prodotti</a> 
   </div> 
 </div> 
 </div>
@@ -42,7 +43,7 @@ Tradizione, innovazione ed energie rinnovabili si incontrano per un’ulivicoltu
 
 <!-- Metto il nome dell'azienda all'interno di un contenitore (div) per adattarsi in maniera responsive -->
 <div class="container-fluid text-center">
-    <h1>Oliva Felice srl</h1>
+    <h2 class="titolo">Oliva Felice srl</h2>
 <p>Azienda agricola specializzata nella coltivazione e trasformazione delle olive,
 orientata a pratiche produttive rispettose dell’ambiente e del territorio.</p>
 </div>
@@ -62,13 +63,13 @@ orientata a pratiche produttive rispettose dell’ambiente e del territorio.</p>
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/sfondoOlivaFelice.png" class="d-block w-100" alt="OlivaFelice">
+          <img src="img/sfondoOlivaFelice.png" class="d-block w-100 ImmaginiCarosel" alt="OlivaFelice">
         </div>
         <div class="carousel-item">
-          <img src="img/OlivaItaliana.png" class="d-block w-100" alt="OlivaItaliana">
+          <img src="img/OlivaItaliana.png" class="d-block w-100 ImmaginiCarosel" alt="OlivaItaliana">
         </div>
         <div class="carousel-item">
-          <img src="img/CampiUlivi.png" class="d-block w-100" alt="Campi">
+          <img src="img/Museo2.png" class="d-block w-100 ImmaginiCarosel" alt="Museo">
         </div>
       </div>
 
@@ -117,7 +118,6 @@ Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puo
       <th scope="col">Anno</th>
       <th scope="col">2023</th>
       <th scope="col">2024</th>
-      <th scope="col">2025</th>
     </tr>
   </thead>
 
@@ -125,18 +125,58 @@ Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puo
     <tr>
       <th scope="row">Report</th>
       <td>
-        <a href="documents/ReportOlivaFelice2023.pdf">Scarica</a>
+        <a href="documents/ReportSostenibilità2023.pdf">Scarica</a>
       </td>
       <td>
-        <a href="documents/ReportOlivaFelice2024.pdf">Scarica</a>
-      </td>
-      <td>
-        <a href="documents/ReportOlivaFelice2025.pdf">Scarica</a>
+        <a href="documents/ReportSostenibilità2024.pdf">Scarica</a>
       </td>
     </tr>
   </tbody>
 </table>
   </section>
+
+  <!-- Creo una piccola sezione con le certificazioni ottenute dall'azienda -->
+   <h3>Le nostre Certificazioni: </h3>
+   <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card cert">
+      <img src="img/BCertified.png" class="card-img-top" alt="BCorp">
+      <div class="card-body corpoCert">
+        <h5 class="card-title scritta" style="color: white;">B Corporation</h5>
+        <p class="card-text" style="color: white;">Una B Corp è un'azienda che volontariamente rispetta i più alti standard sociali ed ambientali in termini di performance, responsabilità e trasparenza.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card cert">
+      <img src="img/SGS.png" class="card-img-top" alt="SGS">
+      <div class="card-body corpoCert">
+        <h5 class="card-title scritta" style="color: white;">Certificazione SGS</h5>
+        <p class="card-text" style="color: white;">Servizio di controllo per la verifica dei parametri chimici relativi al 100% dei lotti delle ricette di confezionamento.
+IT MI.03.P01
+STP 013/11</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card cert">
+      <img src="img/RIA.png" class="card-img-top" alt="Ria">
+      <div class="card-body corpoCert">
+        <h5 class="card-title scritta" style="color: white;">Certificazione parità di Genere UNI/PdR 125</h5>
+        <p class="card-text" style="color: white;">La Certificazione UNI/PDR 125:2022 riconosce l’impegno dell’azienda nel promuovere un ambiente di lavoro equo, inclusivo e rispettoso della parità di genere.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card cert">
+      <img src="img/SigilloNET.png" class="card-img-top" alt="NET">
+      <div class="card-body corpoCert">
+        <h5 class="card-title scritta" style="color: white;">Sigillo Netcomm</h5>
+        <p class="card-text" style="color: white;">Il sigillo Net-Comm comunica trasparenza, qualità e affidabilità al consumatore finale oltre al messaggio "comprare online è facile, conveniente e sicuro."</p>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
@@ -148,7 +188,7 @@ Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puo
       <img src="img/bottigliaOlio2.png" class="card-img-top imgCard" alt="Bottiglia di olio">
       <div class="card-body">
         <h5 class="card-title">Olio</h5>
-        <p class="card-text">Da anni ci occupiamo con amore e passione dell'olio extravergine di oliva.</p>
+        <p class="card-text">Da anni ci occupiamo con amore e passione dell'olio di oliva.</p>
       </div>
     </div>
   </div>
@@ -166,16 +206,16 @@ Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puo
       <img src="img/pate.png" class="card-img-top imgCard" alt="patè di olive">
       <div class="card-body">
         <h5 class="card-title">Prodotti</h5>
-        <p class="card-text">Cerca al supermercato i prodotti con il nostro marchio.</p>
+        <p class="card-text">Scopri i nostri prodotti di gastronomia e le conserve firmate Oliva Felice.</p>
       </div>
     </div>
   </div>
   <div class="col">
     <div class="card">
-      <img src="img/olive.png" class="card-img-top imgCard" alt="olive">
+      <img src="img/Emporio.png" class="card-img-top imgCard" alt="emporio">
       <div class="card-body">
-        <h5 class="card-title">Servizio di frantoio</h5>
-        <p class="card-text">Offriamo servizi di frantoio presso la nostra sede.</p>
+        <h5 class="card-title">Emporio</h5>
+        <p class="card-text">Vieni a scoprire il mondo Oliva Felice in uno dei nostri 21 Empori.</p>
       </div>
     </div>
   </div>
@@ -189,16 +229,22 @@ Se desideri approfondire il nostro impegno concreto e i risultati raggiunti, puo
     <address>
       Indirizzo: Via Roma 234, 000001 Cagliari (CA)<br>
       Email: olivafelicesrl@olivafelice.it<br>
-      Telefono: +3907123456789<br>
+      Telefono: +39 07123456789<br>
       PEC: olivafelice@pec.it<br>
       P.IVA: 0123456789
     </address>
   </div>
   <!--- Creo un piccolo div dove dentro ci metto 3 icone prese da Bootstrap-->
   <div class="icone">
+    <a href="#" aria-label="Facebook">
     <i class="bi bi-facebook"></i>
+    </a>
+    <a href="#" aria-label="WhatsApp">
     <i class="bi bi-whatsapp"></i>
+    </a>
+    <a href="#" aria-label="Instagram">
     <i class="bi bi-instagram"></i>
+    </a>
   </div>
 </footer> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
